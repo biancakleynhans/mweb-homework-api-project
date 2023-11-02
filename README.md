@@ -17,23 +17,23 @@ in your spare 1me as well.
    accordingly as the viewport gets smaller.
 3. Use your own ini1a1ve regards to styling and layout of the page.
 4. Main breakpoints are:
-   o > 1024 Desktop
-   o <= 1024 Tablet landscape
-   o >= 768 Tablet Portrait
-   o < 768 Mobile
+   #### > 1024 Desktop
+   #### <= 1024 Tablet landscape
+   #### >= 768 Tablet Portrait
+   #### < 768 Mobile
 5. Each child component card will handle one of the following six API response scenarios using the
    following site, h`ps://h`pstat.us/ , to mock the respec1ve responses.
-   o 200 OK
-   o 200 OK with 10sec delay
-   o 400 Bad Request
-   o 404 Not Found
-   o 500 Internal Server Error
-   o 504 Gateway Timeout
+   #### 200 OK
+   #### 200 OK with 10sec delay
+   #### 400 Bad Request
+   #### 404 Not Found
+   #### 500 Internal Server Error
+   #### 504 Gateway Timeout
 6. The full response must be returned to the calling component so it can inspect the response.status to
    decide the appropriate ac1on to take and response to show.
 7. Each child component must be styled to look like a standalone card with
-   o Short Title indica1ng which scenario the block represents.
-   o A Call to Ac1on bu`on that fires off the relevant API event.
-   o Use your own ini1a1ve regards to styling and layout of the card.
+   ##### Short Title indica1ng which scenario the block represents.
+   ##### A Call to Ac1on bu`on that fires off the relevant API event.
+   ##### Use your own ini1a1ve regards to styling and layout of the card.
 8. Each card must visually indicate to the user when the API call is running and show an appropriate
    response to the user based on the API response.
