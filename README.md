@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Brief
 
-## Getting Started
+Create a NextJS 13 solu1on using (at minimum) the following packages versions or higher, which demonstrates
+handling various API HTTP Status Code responses.
+Node 18.16.1, React 18.2.2, Next 13.4.9, Tailwind 3.3.2
+Create a standalone GitHub Repository within your own GitHub profile in which to create this solu1on.
+There are no prizes for finishing first. Func1onality and implementa1on first, then handling appropriate user
+feedback, then styling, that’s the order of importance I’ll be looking at.
+You will have one week to complete this and you may spend a maximum of 2hrs during the workday on this, as
+long as it doesn’t interfere with any current stories or tasks you are working on. You may work on this at home
+in your spare 1me as well.
 
-First, run the development server:
+# Requirements and Guidelines
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Create a landing page that has six child component cards.
+2. The child component card needs to be laid out in a maximum of 2 rows of 3 on desktop and then wrap
+   accordingly as the viewport gets smaller.
+3. Use your own ini1a1ve regards to styling and layout of the page.
+4. Main breakpoints are:
+   o > 1024 Desktop
+   o <= 1024 Tablet landscape
+   o >= 768 Tablet Portrait
+   o < 768 Mobile
+5. Each child component card will handle one of the following six API response scenarios using the
+   following site, h`ps://h`pstat.us/ , to mock the respec1ve responses.
+   o 200 OK
+   o 200 OK with 10sec delay
+   o 400 Bad Request
+   o 404 Not Found
+   o 500 Internal Server Error
+   o 504 Gateway Timeout
+6. The full response must be returned to the calling component so it can inspect the response.status to
+   decide the appropriate ac1on to take and response to show.
+7. Each child component must be styled to look like a standalone card with
+   o Short Title indica1ng which scenario the block represents.
+   o A Call to Ac1on bu`on that fires off the relevant API event.
+   o Use your own ini1a1ve regards to styling and layout of the card.
+8. Each card must visually indicate to the user when the API call is running and show an appropriate
+   response to the user based on the API response.
